@@ -1,0 +1,13 @@
+name: unit
+version: 0.1.0
+
+authors:
+  - johnpyp <johnpaulpenaloza@gmail.com>
+
+targets:
+  unit:
+    main: src/unit.cr
+
+crystal: 0.29.0
+
+license: MIT
