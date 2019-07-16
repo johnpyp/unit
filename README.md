@@ -8,10 +8,23 @@ Support units:
 
 - money
 
-## Installation
+## Installation (not yet implemented)
 
 1. Download the latest binary from the releases tab
 2. `./unit --help`
+
+## Installation from source
+
+Requirements:
+
+- crystal
+- shards
+
+1. `git clone https://github.com/johnpyp/unit`
+2. `cd unit`
+3. `shards install`
+4. `crystall build --release src/unit.cr`
+5. `./unit --help`
 
 ## Usage
 
