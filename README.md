@@ -4,7 +4,7 @@
 
 Unit is a cli tool for doing different unit conversions.
 
-Support units:
+Supported units:
 
 - money
 
@@ -27,6 +27,28 @@ Requirements:
 5. `./unit --help`
 
 ## Usage
+
+```sh
+$ unit money 10 usd
+
+USD 10.0
+EUR 9.01
+CAD 14.02
+
+$ unit money 10 usd --mode all
+
+USD 10.0
+EUR 9.01
+CAD 14.02
+HKD 78.10
+PHP 508.9
+HUF 2903.41
+...
+
+$ unit money 10 eur -m usd # -m is an alias for --mode
+
+EUR 11.22
+```
 
 TODO: Write usage instructions here
 

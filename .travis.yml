@@ -1,6 +1,13 @@
 language: crystal
 
-# Uncomment the following if you'd like Travis to run specs and check code formatting
-# script:
-#   - crystal spec
-#   - crystal tool format --check
+script:
+  - crystal build --release src/unit.cr
+
+deploy:
+  provider: releases
+  api_key:
+    secure: lpg7rSzVYHEhV22GfiPDVSGD+vdoMDWCItxPkxmO7AkwTVyVXRsbWgGPd1jKNR2m8EfaaByoULkeMwnQmAMELncvr7yuU6JxGeJOgRRKhjk5nf5uSKZakszTN2cvgSmIxSKUIbLtTx0Ev64+yHlidO2MTTfbpgKAsGhKRUAXx4tmcn3oD0vt1KXJhDYBEs5Qt6cjKjWdXWXzIwXKXv2sZCqVztLbcLy87fxF89pgBcCNVDiDBQWBja3mNPFa5rGw5RXcY/Q3Q4RDkXFiYSrW5cIDJ+eg67LVSu0r/q3je8+C0jZilIZ8qJArNNGSv9O/QCtvtdPJNpO6lt+EQqv00MgR/IGoqA6FrGOxJfsh1ST6RrLtOcP7wKl9KIL1N2VrJkLhjoFGbD+1CJfOeluklN2PIKsziqB9TOFVy8BLKsrUqkoKJTKtjbpODhthL3EgrWOo3ZmFEN6etdAe25lJmA7vYpoTMD6RbA1AgirjzkFu30b/IcRbMGI8FbqN9AV4tBmV/ZAkQvBta2bVGqmzREsyGzYQ64e5rbhh9XrOkvZk3NQCDlQAId6NK4YPFEBEu3+TJ4MobkvpklP6zc+KRL/KgvJKklQccst3R6cZycvIgTDxE/ZlriWBqWVLFOkh7z/3kGOgkCh5N8KQzM96CtgJqqQPZt5qY2VtBUjKjgA=
+  file: unit
+  on:
+    repo: johnpyp/unit
+    tags: true

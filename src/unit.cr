@@ -9,7 +9,7 @@ module Unit
     main do
       desc "Unit conversions and information"
       usage "unit [unit | type] [arguments]"
-      version "Version #{Unit::VERSION}"
+      version "version #{Unit::VERSION}", short: "-v"
       run do |opts, args|
         if args.empty?
           return puts opts.help_string
