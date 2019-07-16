@@ -1,3 +1,5 @@
+[![Unit](convert-button.png)](https://github.com/johnpyp/unit)
+
 # Unit
 
 Unit is a cli tool for doing different unit conversions.
@@ -8,7 +10,8 @@ Support units:
 
 ## Installation
 
-TODO: Write installation instructions here
+1. Download the latest binary from the releases tab
+2. `./unit --help`
 
 ## Usage
 
